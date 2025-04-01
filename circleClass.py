@@ -1,0 +1,33 @@
+# Given a radius value, print the circumference of a circle.
+# Formula for circumference: C = 2 * π * radius
+
+class Circle:
+    # Constructor (__init__) to initialize the radius attribute
+    def __init__(self, radius):
+        self.radius = radius
+
+    # Method to calculate circumference
+    def circumference(self):
+        pi = 3.14  # Approximate value of pi
+        circumferenceValue = pi * self.radius * 2
+        return circumferenceValue
+
+    # Method to print the calculated circumference
+    def printCircumference(self):
+        myCircumference = self.circumference()
+        print("Circumference of a circle with a radius of " + str(self.radius)
+              + " is " + str(myCircumference))
+
+# First instantiation of the Circle class
+circle1 = Circle(2)
+circle1.printCircumference()
+
+# Two more instantiations and method calls for the Circle class
+circle2 = Circle(5)
+circle2.printCircumference()
+
+circle3 = Circle(7)
+circle3.printCircumference()
+
+# Team Name: TEAM NINJA
+# Members: Joshua Therence Templo, Niña Jane Campaner, Marverick Catigbe, Hannah Jamaica Vega
